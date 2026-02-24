@@ -1,9 +1,13 @@
 import './App.css'
 import { CountButton } from './components/CountButton'
+import { ResourceType } from './components/ResourceType'
 
 function App() {
   return (
-    <CountButton />
+    <>
+      <CountButton />
+      <ResourceType />
+    </>
   )
 }
 
