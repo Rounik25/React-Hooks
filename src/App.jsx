@@ -1,5 +1,6 @@
 import './App.css'
 import { CountButton } from './components/CountButton'
+import { CountButton2 } from './components/CountButton2'
 import { ResourceType } from './components/ResourceType'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <CountButton />
       <ResourceType />
+      <CountButton2 />
     </>
   )
 }
