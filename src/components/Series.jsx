@@ -10,7 +10,7 @@ export function Series() {
     },[number])
 
     const styles = {
-        background : theme ? 'black' : 'grey',
+        background : theme ? 'black' : 'white',
         color : theme ? 'white' : 'black',
         width : '200px'
     }
@@ -19,7 +19,7 @@ export function Series() {
     return (
         <div style={styles}>
             <div>   
-                <input type="number" onChange={e => {e.target.value !=='' ? setNumber(parseInt(e.target.value)) : setNumber(0)}} value={number} />
+                <input style={styles} type="number" onChange={e => {e.target.value !=='' ? setNumber(parseInt(e.target.value)) : setNumber(0)}} value={number} />
             </div>    
             <button onClick={()=> setTheme(prevTheme=>!prevTheme)} >Toggle Theme</button>
             <List getNumber={getNumber}/>
